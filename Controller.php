@@ -17,4 +17,7 @@ if (isset($_POST["regnr"])){
 if (isset($_POST["kontonr"])){
     onAccount();
 }
+if (isset($_POST["navn"])){
+    onName();
+}
 ?>

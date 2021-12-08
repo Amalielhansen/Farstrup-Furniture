@@ -31,6 +31,9 @@ function onReg() {
 function onAccount() {
     saveToPayment($_POST['kontonr']); 
 }
+function onName() {
+    saveToPayment($_POST['navn']); 
+}
 
 //Her bliver det encoded og postet i notes.json
 function saveToBasket($itemBasket){
@@ -60,12 +63,12 @@ function getFromBasket(){
     return $paymentArray;
 }
 
-//function paymentPage(){
-   // if (getFromBasket() == 0)
-    //echo "Error";
-   // else 
-   // echo "./odre.php";
-
+function paymentPage(){
+    if (getFromBasket() == null)
+    echo "Indtast venligst betalings informationer!";
+    else 
+    echo "Tak fordi du handle ved Farstrup Furniture! Ordrebekræftelses nr.:". rand(1.2000);
+}
 
 
 ?>

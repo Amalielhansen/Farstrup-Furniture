@@ -21,10 +21,10 @@ include("./Controller.php");
         <a href="./index.php">Kontakt</a>
         <a href="./index.php">Contract</a>
     </ul>
-    
+
     <?php
         echo productPlacment(0);
-        print_r(getFromFile());
+        print_r(getFromFile(0));
     ?>
 
  <form method="get" action="./betalingsside.php">

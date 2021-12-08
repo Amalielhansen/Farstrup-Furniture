@@ -23,6 +23,12 @@ print_r(getFromFile());
 <br>
 <form method="post">
 <?php
+echo "Kortholders navn"
+?>
+<br>
+<input type="text" name="navn">
+<br>
+<?php
 echo "Reg. nr."
 ?>
 <br>
@@ -34,14 +40,18 @@ echo "Konto. nr."
 <br>
 <input type="text" name="kontonr">
 <br>
-<button method="post" action="./ordre">Gennemfør betaling</button>
+<form method="POST" action="./ordre.php">
+    <input type="submit"/> 
+   </form>
 </form>
 <br>
 <form method="get" action="./kurv.php">
     <button type="submit">Til kurven</button>
 </form>
+<br>
+<br>
 <?php
-//echo paymentPage();
+echo paymentPage();
 ?>
 </body>
 </html>

@@ -33,14 +33,23 @@ include("./Controller.php");
          align="middle">
 
     <form method="post">
+        <?php
+        echo "Sædehøjde"
+        ?>
         <input type="text" name="sædehøjde">
-        <button type="submit">Sædehøjde</button>
+        <?php
+        echo "Sædedybde"
+        ?>
         <input type="text" name="sædedybde">
-        <button type="submit">Sædedybde</button>
+        <?php
+        echo "Sædebredde"
+        ?>
         <input type="text" name="sædebredde">
-        <button type="submit">Sædebredde</button>
+        <?php
+        echo "Andre tilføjelser"
+        ?>
         <input type="text" name="andremuligheder">
-        <button type="submit">Andre tilføjelser</button>
+        <button type="submit">Tilføj</button>
 
     </form>
 <br>
