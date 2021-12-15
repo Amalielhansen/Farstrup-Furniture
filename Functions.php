@@ -67,8 +67,6 @@ function paymentPage(){
     if (getFromBasket() == null)
     echo "Indtast venligst betalings informationer!";
     else 
-    echo "Tak fordi du handle ved Farstrup Furniture! Ordrebekræftelses nr.:". rand(1.2000);
+    echo "Tak fordi du handle ved Farstrup Furniture! Ordrebekræftelses nr.:". rand(1,2000);
 }
-
-
 ?>
